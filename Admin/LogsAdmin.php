@@ -36,7 +36,11 @@ class LogsAdmin extends AbstractAdmin
     /**
      * {@inheritdoc}
      */
+<<<<<<< Updated upstream
     protected function configureRoutes(RouteCollectionInterface $collection): void
+=======
+    protected function configureRoutes(RouteCollectionIn $collection)
+>>>>>>> Stashed changes
     {
         $collection->add('decrypt_encrypt', 'decrypt-encrypt', [], [], [], '', [], ['GET', 'POST']);
     }
